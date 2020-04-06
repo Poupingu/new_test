@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="27marsstyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Poupingu</h1>
+        <div>
+            <a href="#mid-page" class="about">About</a>
+            <a href="#end-page" class="portfolio">Portfolio</a>
+        </div>
+        <main>
+            <section class="section1"> 
+                <div class="alignall">
+                    <h2>Welcome</h2>
+                    <p>Insérer futur gif dernier jeu</p>
+                    <img src="cat1.jpg" style="width: 70%;" />
+                </div>
+            </section>
+            <section class="section2">
+                <p id="mid-page"></p>
+                <div class="alignall">
+                    <p class="ici">A propos de...</p>
+                    <div class="card">
+                        <img src="cat1.jpg" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>Lorem catsum</b></h4>
+                            <p>Grumpy & Cat</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section3">
+                <p id="end-page"></p>
+                <div class="alignall">
+                    <p class="ici">Quelques exemples de...</p>
+                    <img class="mySlides" src="cat1.jpg" />
+                    <img class="mySlides" src="cat2.jpeg" />
+                    <img class="mySlides" src="cat3.jpg" />
+                    <img class="mySlides" src="cat4.jpg" />
+                    <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="display-right" onclick="plusDivs(+1)">&#10095;</button>
+                    <script> slideIndex = 1;
+                        showDivs(slideIndex);
+
+                        function plusDivs(n) {
+                            showDivs(slideIndex += n);
+                        }
+
+                        function showDivs(n) {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            if (n > x.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = x.length };
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            x[slideIndex - 1].style.display = "block";
+                        }</script>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <ul>
+                <li class="liste"><a href="contact.html">contact</a></li>
+                <li class="liste"><a href="mention.html">mentions légales</a></li>
+            </ul>
+        </footer>
+</body>
+
+</html>
